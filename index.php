@@ -17,32 +17,34 @@
             
         </div>
     </header>
-    <?php
-include_once ("navbar.php");
-    ?>
+    <?php include_once ("navbar.php");?>
     <div class="Ensemble">
         <h1>Bienvenue dans la gestion administrative</h1>
         <Section >
-            <div class="haut">
-                <h3>.......</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis necessitatibus consequatur fugiat earum quibusdam, reprehenderit explicabo minima placeat quam culpa delectus sunt quo inventore quaerat iusto iure at, nam nulla?</p>
-                <button>
-                    <a href="#">Ajouter</a>
-                </button>
+            <div class="row">
+                <div class="card">
+                    <h3>.......</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis necessitatibus consequatur fugiat earum quibusdam, reprehenderit explicabo minima placeat quam culpa delectus sunt quo inventore quaerat iusto iure at, nam nulla?</p>
+                    <button>
+                        <a href="#" class="btn_card">Ajouter</a>
+                    </button>
+                </div>
+                <div class="card">
+                    <h3>.......</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis necessitatibus consequatur fugiat earum quibusdam, reprehenderit explicabo minima placeat quam culpa delectus sunt quo inventore quaerat iusto iure at, nam nulla?</p>
+                    <button>
+                        <a href="#" class="btn_card">Modifier</a>
+                    </button>
+                </div>
             </div>
-            <div class="haut2">
-                <h3>.......</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis necessitatibus consequatur fugiat earum quibusdam, reprehenderit explicabo minima placeat quam culpa delectus sunt quo inventore quaerat iusto iure at, nam nulla?</p>
-                <button>
-                    <a href="#">Modifier</a>
-                </button>
-            </div>
-            <div class="Bas">
-            <h3>.......</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis necessitatibus consequatur fugiat earum quibusdam, reprehenderit explicabo minima placeat quam culpa delectus sunt quo inventore quaerat iusto iure at, nam nulla?</p>
-                <button>
-                    <a href="#">Consulter</a>
-                </button>
+            <div class="row">
+                <div class=card">
+                    <h3>.......</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis necessitatibus consequatur fugiat earum quibusdam, reprehenderit explicabo minima placeat quam culpa delectus sunt quo inventore quaerat iusto iure at, nam nulla?</p>
+                    <button>
+                        <a href="#" class="btn_card">Consulter</a>
+                    </button>
+                </div>
             </div>
         </Section>
     </div>
