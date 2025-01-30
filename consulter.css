@@ -1,0 +1,76 @@
+:root{
+    font-size: 14px;
+}
+body{
+    margin:0px;
+    padding:0px;
+}
+table{
+    border:1px solid rgb(50,50,50);
+    width:100%;
+    border-collapse: collapse;
+    text-align: center;
+    overflow-x: scroll;
+    margin-top:15px;
+}
+thead td{
+    font-size: 1em;
+}
+td{
+    font-size: 0.85em;
+    background-color: rgb(150,150,150);
+    font-weight: bold;
+    border-top:1px solid rgb(80,80,80);
+}
+td:nth-child(2n){
+    background-color: rgb(100,100,100);
+}
+td:nth-child(2){
+    width:75px;
+}
+.consulter{
+    background-color: rgb(50,50,50);
+    width:50%;
+    display: flex;
+    justify-content: space-between;
+    margin:auto;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+}
+.consulter a{
+    color:black;
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(175,175,175);
+    border-radius: 10px;
+}
+.consulter a:hover{
+    cursor: pointer;
+    background-color: rgb(150, 150, 150);
+}
+.creer{
+    display: flex;
+    flex-direction: column;
+}
+.creer:hover .fonctions{
+    display: block;
+}
+.creer a{
+    display: block;
+    margin-top:5px;
+}
+.handle{
+    font-size:1.1em;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: rgb(150,150,150);
+}
+.fonctions{
+    display: none;
+}
+@media screen and (min-width:750px){
+    :root{
+        font-size: 16px;
+    }
+}

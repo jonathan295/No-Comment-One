@@ -24,14 +24,15 @@ class membre_model{
         return $req->rowCount();
 
     }
-    public function insertion($nom,$prenom,$date_naissance,$lieu_naissance,$pere,$mere,$proffesion,$nomFokontany){
+    public function insertion($nom,$prenom,$date_naissance,$lieu_naissance,$pere,$mere,$nomFokontany){
         $req = $this->db->prepare("INSERT INTO personne(nom,prenom,date_naissance,lieu_naissance,pere,mere,proffession,nomFokontany) VALUES (?,?,?,?,?,?,?,?)");
-        $req->execute([$nom,$prenom,$date_naissance,$lieu_naissance,$pere,$mere,$proffesion,$nomFokontany]);
+        $req->execute([$nom,$prenom,$date_naissance,$lieu_naissance,$pere,$mere,$nomFokontany]);
     }
 
     public function insertion_admin($nom,$prenom,$fonction,$mdp,$code_position){
-        $req = $this->db->prepare("INSERT INTO fonctionnaire(nom,prenom,fonction,mot_de_passe,code_clé) VALUES (?,?,?,?,?");
+        $req = $this->db->prepare("INSERT INTO fonctionnaire(nom,prenom,fonction,mot_de_passe,code_clé) VALUES (?,?,?,?,?)");
         $req->execute([$nom,$prenom,$fonction,$mdp,$code_position]);
+        return $req->rowCount();
     }
 
     public function insertion_Cin($nom,$prenom,$date_naissance,$lieu_naissance,$pere,$proffession1,$mere,$proffession2,$lieu_delivrance_cin,$num_cin){

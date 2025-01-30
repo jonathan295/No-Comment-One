@@ -1,43 +1,137 @@
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 body{
-    background-color: white;
-    width: 100%;
+    background-color: #F2F2F2;
 }
-.entete{
+/* ------------------------------Contenue---------------- */
+.corpse{
+    display: flex;
     width: 100%;
-    height: 100vh;
-    background-color: red;
-    display: flex;  
+    height: fit-content;
 }
-.navbar{
-    background-color: aqua;
-    width: 20%;
-    align-items: center;
+
+.title{
     text-align: center;
+}
+
+.title span{
+    font-weight: bolder;
+}
+
+.Ensemble{
+    margin-left: 15%;
+}
+/* ---------------------card--------------------------- */
+.row{
+    display: flex;
+    justify-content: space-around;
+    margin: 2%;
+}
+.card{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    /* border-radius: 10px; */
+    width: 25%;
+    height: fit-content;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.473);
+    box-shadow: 0 0 10px 1px black;
 }
-.navbar ul li {
-    list-style-type: none;
-    padding-bottom: 2.5rem;
+.lol{
+    visibility: hidden;
 }
-.navbar ul li a{
-    font-size: 1.5em;  
-    text-decoration: none;    
+
+.card_title{
+    border: 1px solid black;
+    /* background-color: black; */
+    color: black;
+    padding: 2%;
 }
-.navbar ul li a:hover{
-    cursor: pointer;
-    background: rgb(241, 188, 109); 
-    border-radius: 5px; 
-        
+
+.card_paragraphe{
+    text-indent: 50px;
+    text-align: center;
 }
-.navbar button{
-    margin-top: 8rem;
-    font-size: 1.2em;
-    background-color: burlywood;
-    
+
+.btn_card{
+    display: flex;
+    align-items: center;
+    /* padding: 5%; */
+
+    border-radius: 10px;
+    padding: 5%;
+    background: #006;
+    color: white;
+}
+
+.btn_card a{
+    color: white;
+}
+
+.col-1{
+    justify-content: center;
+    align-items: center;
+}
+
+.space_row{
+    height: 10px;
+}
+
+/* ---------------footer------------------------ */
+
+footer{
+    display: flex;
+    border-top:1px solid black;
+}
+
+.footer_title{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.message_champs{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box_message_champs{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+.box_message_champs input{
+    margin-left: 20px;
+}
+
+textarea{
+    height: 100px;
+}
+
+.send{
+    border-radius: 10px;
+    padding: 2%;
+    background: #006;
+    color: white;
+}
+
+.logo{
+    width: 50%;
+}
+
+.logo img{
+    object-fit: contain;
+    width: 100%;
 }

@@ -1,3 +1,59 @@
 .navbar{
-    background-color: red;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000066;
+    width: 15%;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.nav_box{
+    display: flex;
+    align-items: center;
+    border: none;
+} 
+
+.logout_btn{
+    display: block;
+    padding: 4%;
+}
+.logout_btn:hover{
+    cursor: pointer;
+}
+
+.top{
+    display: flex;
+    height: 45%;
+    width: 98%;
+    justify-content: center;
+}
+
+.links, .icone_link{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.links a, .icone_link a .fa{
+    color: white;
+}
+
+.space_column{
+    width: 10px;
+}
+
+.bottom{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+main{
+    margin-left:15%;
 }

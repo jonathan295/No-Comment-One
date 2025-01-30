@@ -2,19 +2,18 @@
     require_once 'Model/membre_model.php';
     class membre{
 
-        public function enregistrer($nom,$prenom,$date_naissance ,$lieu_naissance,$pere,$mere,$proffesion,$nomFokontany){
+        public function enregistrer($nom,$prenom,$date_naissance ,$lieu_naissance,$pere,$mere,$nomFokontany){
             $nom = htmlspecialchars(trim($_POST['nom'] ));
             $prenom = htmlspecialchars(trim($_POST['prenom']));
             $date_naissance = htmlspecialchars(trim($_POST['date_naissance']));
             $lieu_naissance = htmlspecialchars(trim($_POST['lieu_naisssance']));
             $pere = htmlspecialchars(trim($_POST['pere'])); 
             $mere = htmlspecialchars(trim($_POST['mere']));
-            $proffession = htmlspecialchars(trim($_POST['proffesion']));
-            $nomFokontany = htmlspecialchars(trim($_POST['nonFokontany']));
-            if($nom!="" && $prenom!="" && $date_naissance!="" && $lieu_naissance!="" && $pere!="" && $mere!="" && $proffession!="" && $nomFokontany!=""){
+            $nomFokontany = htmlspecialchars(trim($_POST['nomFokontany']));
+            if($nom!="" && $prenom!="" && $date_naissance!="" && $lieu_naissance!="" && $pere!="" && $mere!="" && $nomFokontany!=""){
                 require_once('Model/membre-model.php');
                 $nn = new membre_model();
-                $nn->insertion($nom, $prenom, $date_naissance, $lieu_naissance, $pere, $mere, $proffesion, $nomFokontany);
+                $nn->insertion($nom, $prenom, $date_naissance, $lieu_naissance, $pere, $mere, $nomFokontany);
                 header("location:");
             }
         }
