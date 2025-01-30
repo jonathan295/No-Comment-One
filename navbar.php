@@ -42,7 +42,7 @@
             </div>
             <div class="bottom">
                 <button class="nav_box">
-                    <a href="#" class="logout_btn" id="sortir">Sortir</a>
+                    <a href="index.php" class="logout_btn" id="sortir">Sortir</a>
                     <div class="space_column"></div>
                     <i class="fa fa-sign-out-alt"></i>
                 </button>
