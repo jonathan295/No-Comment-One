@@ -9,6 +9,7 @@
 <body> -->
     <?php include("navbar.php");?>
 <main>
+
     <form action="index.php?action=register-membre" method="post" >
         <h2 style="text-align:center">Ajouter un Identifiant</h2>
         <label for="nom">Nom :</label>
@@ -21,6 +22,7 @@
         <input type="date" name="date_naissance">
         <label for="lieu">Lieu de naissance:</label>
         <input type="text" name="lieu_naissance">
+
         <div class="genre">
             <div>
                 <input type="radio" name="genre" value="masculin">
@@ -35,9 +37,10 @@
         <input type="text" name="pere">
         <label for="mere">Mère :</label>
         <input type="text" name="mere">
-        <label for="fokotany">Fokontany :</label>
+        <label for="fokontany">Fokontany :</label>
         <input type="text" name="nomFokontany">
         <input type="submit"  name="btnRegister" value="Soumetre">    
+
     </form>
 
     <?php include("footer.php");?>
