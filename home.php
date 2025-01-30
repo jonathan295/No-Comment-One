@@ -12,11 +12,24 @@
                     <p class="card_paragraphe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis necessitatibus consequatur fugiat earum quibusdam, reprehenderit explicabo minima placeat quam culpa delectus sunt quo inventore quaerat iusto iure at, nam nulla?</p>
                     <div class="space_row"></div>
                     <button class="btn_card">
-                        <a href="#">Ajouter</a>
+                        <a href="ajouter.php">Ajouter</a>
                         <div class="space_column"></div>
                         <i class="fa fa-angle-double-right"></i>
                     </button>
                 </div>
+                <div class="card">
+                    <h3 class="card_title">.......</h3>
+                    <div class="space_row"></div>
+                    <p class="card_paragraphe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis necessitatibus consequatur fugiat earum quibusdam, reprehenderit explicabo minima placeat quam culpa delectus sunt quo inventore quaerat iusto iure at, nam nulla?</p>
+                    <div class="space_row"></div>
+                    <button class="btn_card">
+                        <a href="consulter.php">Consulter</a>
+                        <div class="space_column"></div>
+                        <i class="fa fa-angle-double-right"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- <div class="row col-1">
                 <div class="card">
                     <h3 class="card_title">.......</h3>
                     <div class="space_row"></div>
@@ -28,23 +41,11 @@
                         <i class="fa fa-angle-double-right"></i>
                     </button>
                 </div>
-            </div>
-            <div class="row col-1">
-                <div class="card">
-                    <h3 class="card_title">.......</h3>
-                    <div class="space_row"></div>
-                    <p class="card_paragraphe">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis necessitatibus consequatur fugiat earum quibusdam, reprehenderit explicabo minima placeat quam culpa delectus sunt quo inventore quaerat iusto iure at, nam nulla?</p>
-                    <div class="space_row"></div>
-                    <button class="btn_card">
-                        <a href="#">Ajouter</a>
-                        <div class="space_column"></div>
-                        <i class="fa fa-angle-double-right"></i>
-                    </button>
-                </div>
-            </div>
+            </div> -->
         </Section>
         <?php include "footer.php" ?>
 </main>
+
 
 </body>
 </html>

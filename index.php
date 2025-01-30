@@ -4,10 +4,12 @@
         if($_GET["action"]=="login"){
             include("inscription.php");
             if (isset($_POST['soumettre'])) {
-                include('Model/membre-model.php');
-                $cc= new membre_model();
-                $cc->insertion_admin($_POST["nom"],$_POST["prenom"],$_POST["fonction"],$_POST["mdp"],$_POST["code_position"]); 
-                include('home.php');                 
+                require_once "test.php";
+                // include('Model/membre-model.php');
+                // $cc= new membre_model();
+                // $cc->insertion_admin($_POST["nom"],$_POST["prenom"],$_POST["fonction"],$_POST["mdp"],$_POST["code_position"]); 
+                // include('home.php'); 
+                header("location: home.php");                
             }else{
                 //redirection
                 header ('location:index.php?action=login');
